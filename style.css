@@ -3,8 +3,86 @@
 	src: url('Gotham Medium.otf');
 }
 
+* {
+    font-family: "Gotham Medium", Helvetica, Arial, sans-serif;
+}
+
+body,
+h1,
+h2,
+p,
+div,
+section {
+    margin: 0;
+    padding: 0;
+    color: #393c41;
+}
+
 .page {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
     position: relative;
+}
+
+#model3 {
+    background-image: url("images/model3.jpg");
+}
+
+#modelS {
+    background-image: url("images/modelS.jpg");
+}
+
+#powerwall {
+    background-image: url("images/solarPanels.jpg");
+}
+
+h1 {
+    padding-top: 100px;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+h2 {
+    color: gray;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-config {
+    background-color: #171a20;
+    color: white;
+}
+
+.btn-vehicules {
+    background-color: white;
+    color: #171a20;
+}
+.btn-config, .btn-vehicules {
+    border-radius: 50px;
+    opacity: 0.75;
+    padding: 10px 20px;
+    border: none;
+    margin: 0 10px;
+}
+
+#model3-img {
+    width: 100px;
+}
+
+p {
+    margin-top: 20px;
 }
 
 .bas-section {
@@ -14,14 +92,57 @@
     bottom: 50px;
 }
 
+#model3 .bas-section {
+    bottom: 0px;
+}
+
+#reserver {
+    font-size: 14px;
+    color: #393c41;
+    text-decoration: underline;
+}
+
+#reserver:hover {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #393c41;
+    text-decoration-thickness: 2px;
+}
+
 svg {
     display: flex;
     position: absolute;
 }
 
+.navbar ul {
+    /* padding: 0px; */
+    text-align: center;
+    list-style-type: none;
+}
+
+.navbar li {
+    display: inline-block;
+    min-width: 150px;
+}
+
+.navbar a {
+    color: #393c41;
+    font-size: 14px;
+}
+
 .navbar {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+}
+
+header {
+    position: fixed;
+    width:100%;
+    z-index: 1;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #footer-tesla{
@@ -65,7 +186,7 @@ svg {
 }
 
 .grid-item img{
-    width: 100%;
+    width: 100%; /* on garde ça */
 }
 
 .inner {
