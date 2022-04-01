@@ -24,4 +24,23 @@ function remplir_accessoires() {
 		});
 }
 
+const sections_ids = document.querySelectorAll("section").map((section) => section.id);
+function keyboard_manager(ev) {
+	ev.preventDefault();
+
+	switch (ev.key) {
+		case "Escape":
+		case "ArrowDown":
+		case "PageDown":
+		case "2":
+			// TODO Goto next section
+			break;
+		case "ArrowUp":
+		case "PageUp":
+			// TODO Goto prev section
+	}
+}
+
+document.addEventListener('keyup', keyboard_manager);
+
 remplir_accessoires();
