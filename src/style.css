@@ -104,3 +104,124 @@ svg {
     transform: translate(-50%, 0);
     white-space: nowrap;
 }
+
+* {
+    font-family: "Gotham Medium", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body, div, section, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+section.page {
+    height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+}
+
+#model3 {
+    background-image: url("images/model3.jpg");
+}
+
+#modelS {
+    background-image: url("images/modelS.jpg");
+}
+
+#powerwall {
+    background-image: url("images/solarPanels.jpg");
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 100;
+    padding-top: 100px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 100;
+    color: gray;
+    margin-top: 10px;
+}
+
+a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-config, .btn-vehicules {
+    opacity: 0.75;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border: none;
+    border-radius: 50px;
+}
+
+.btn-config {
+    background-color: #171a20;
+    color: white;
+}
+
+.btn-vehicules {
+    background-color: white;
+    color: #171a20;
+}
+
+#model3-img {
+    width: 100px;
+}
+
+#model3 p {
+    margin-top: 20px;
+}
+
+#model3 .bas-section {
+    bottom: 0;
+}
+
+#reserver {
+    font-size: 14px;
+    color: #393c41;
+    text-decoration: underline;
+}
+
+#resever:hover {
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #393c41;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    min-width: 150px;
+}
+
+.navbar a {
+    font-size: 14px;
+    color: #393c41;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header img {
+    position: absolute;
+}

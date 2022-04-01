@@ -26,7 +26,7 @@ async function serve() {
  * */
 async function staticFiles() {
   const copyFileAtPath = async (path) => {
-    await $`cp -r "src/${path}" "dist/${basename(path)}"`
+    await $`cp -r "${path}" "dist/${basename(path)}"`
   };
 
   IS_SERVING || IS_WATCHING
@@ -40,7 +40,7 @@ async function staticFiles() {
     : await Promise.all(readdir("src/").then((filesNames) =>
         filesNames
           .filter((fileName) => fileName.match(/.*(?!:css|js)$/))
-          .map((fileName) => $`cp -r "src/${fileName}" "dist/${fileName}"`),
+          .map((fileName) => $`cp -r "${fileName}" "dist/${fileName}"`),
       ));
 }
 
