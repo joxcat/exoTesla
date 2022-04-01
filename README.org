@@ -1,0 +1,4 @@
+* Annale de DS TLW 
+Utilisation de https://github.com/joxcat/simple-web-template pour le hot reload / les lints.
+
+*Rendu du projet final dans:* =dist/=
