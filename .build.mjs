@@ -37,11 +37,11 @@ async function staticFiles() {
         .on("unlink", async (path) => {
           rm(`dist/${basename(path)}`);
         })
-    : await Promise.all(readdir("src/").then((filesNames) =>
-        filesNames
+    : readdir("src/").then(async (filesNames) =>
+        await Promise.all(filesNames
           .filter((fileName) => fileName.match(/.*(?!:css|js)$/))
-          .map((fileName) => $`cp -r "${fileName}" "dist/${fileName}"`),
-      ));
+          .map((fileName) => $`cp -r "src/${fileName}" "dist/${fileName}"`),
+        ));
 }
 
 /**
